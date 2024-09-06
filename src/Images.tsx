@@ -145,17 +145,16 @@ const Images = () => {
   };
 
   useEffect(() => {
-    if (!loadingVersions) {
-      void getVersions();
-    }
-  }, [loadingVersions]);
-
-  useEffect(() => {
     console.log("here");
     if (!loadingImages) {
       void populateImages();
     }
-  }, [version, loadingImages, populateImages]);
+  }, [loadingVersions, version]);
+
+  useEffect(() => {
+    setLoadingVersions(true);
+    void getVersions();
+  }, []);
 
   return (
     <Container width={"100%"} height={"100%"} maxWidth={""} textAlign={"left"}>

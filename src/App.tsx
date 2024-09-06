@@ -67,7 +67,7 @@ const App = () => {
   return (
     <ChakraProvider>
       <Tabs marginInline={"15px"} size={"lg"}>
-        {user && <Button onClick={handleLogout}>Logout</Button>}
+        {/* {user && <Button onClick={handleLogout}>Logout</Button>} */}
         <TabList>
           <Tab>Images</Tab>
           <Tab>Prompt Data</Tab>

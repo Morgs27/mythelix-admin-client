@@ -2,6 +2,10 @@
 
 This project is an Admin Dashboard built with React, TypeScript, and Vite. It includes features for image management, prompt data handling, and image generation for the mythelix app.
 
+![image-2](image-2.png)
+
+![image-1](image-1.png)
+
 ## Prerequisites
 
 - Node.js (v18 or later)
@@ -67,6 +71,3 @@ This project includes a Dockerfile for containerized deployment. The Dockerfile 
    ```
 
    The app will be available at `http://localhost:8080`.
-
-
-
