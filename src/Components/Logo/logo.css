@@ -1,0 +1,26 @@
+.logoContainer{
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 81.1px;
+    height: 86.1px;
+   
+    position: absolute;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    transform: scale(4);
+    border: 1px solid white;
+
+}
+
+.logo{
+    /* width: 300px; */
+    width: 4379.4px;
+    height: 86.1px;
+    max-width: unset;
+    transform: translate(81.1px);
+
+    /* -webkit-mask-image: url("../../assets/logo-animation.png");
+    -webkit-mask-size: cover;
+    -webkit-mask-position: 100px 0%; */
+}
