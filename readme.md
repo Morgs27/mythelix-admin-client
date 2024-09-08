@@ -4,7 +4,7 @@ This project is an Admin Dashboard built with React, TypeScript, and Vite. It in
 
 This dashboard can be used to interact with [Mythelix Admin Server](https://github.com/Morgs27/mythelix-admin-server).
 
-To create images [Mythelix Image Generator](https://github.com/Morgs27/mythelix-image-generator) will also be required. 
+To create images [Mythelix Image Generator](https://github.com/Morgs27/mythelix-image-generator) will also be required.
 
 ![image-2](image-2.png)
 
@@ -19,11 +19,12 @@ To create images [Mythelix Image Generator](https://github.com/Morgs27/mythelix-
    ```
 
 2. Set up environment variables:
-   Create a `.env` file in the root directory and add the following:
+   Update the `.env` file in the root directory with the following:
 
    ```bash
-   VITE_ADMIN_PASSWORD=your_admin_password
-   VITE_TEST_PASSWORD=your_test_password
+   VITE_ADMIN_PASSWORD="password for the admin user"
+   VITE_TEST_PASSWORD="password for the test user"
+   VITE_SERVER_URL="url of the backend server"
    ```
 
 3. Start the development server:
@@ -40,7 +41,7 @@ The app uses a simple authentication system. Users are defined in `AuthService.t
 
 ## API Configuration
 
-The app communicates with a backend server. The server URL is configured in `server.tsx`. Make sure to update this URL to match your backend server address.
+The app communicates with a backend server. The server URL is configured in `server.ts` using the `serverUrl` environment variable.
 
 ## Building for Production
 
@@ -58,7 +59,7 @@ This project includes a Dockerfile for containerized deployment. The Dockerfile 
 
 1. Build the Docker image:
 
-   ```
+   ```bash
    docker build -t admin-dashboard .
    ```
 

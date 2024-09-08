@@ -149,6 +149,7 @@ const Images = () => {
     if (!loadingImages) {
       void populateImages();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loadingVersions, version]);
 
   useEffect(() => {

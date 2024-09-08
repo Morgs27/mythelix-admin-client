@@ -23,6 +23,9 @@ const users: authUser[] = [
 ];
 
 export const login = (username: string, password: string): User => {
+  console.warn(import.meta.env.VITE_ADMIN_PASSWORD);
+  console.warn(import.meta.env.VITE_TEST_PASSWORD);
+  console.warn(import.meta.env.VITE_SERVER_URL);
   const user = users.find((u) => u.username === username);
   if (!user) throw new Error("User not found");
 

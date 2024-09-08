@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import { useState } from "react";
+import serverUrl from "./../server";
 
 const ImageGeneration = () => {
   const [image, updateImage] = useState<string | undefined>();
@@ -19,7 +20,7 @@ const ImageGeneration = () => {
   const generate = async (prompt: string | undefined) => {
     updateLoading(true);
     const result = await axios.get<string>(
-      `http://127.0.0.1:8000/?prompt=${prompt!}`
+      `${serverUrl}/generate?prompt=${prompt!}`
     );
     updateImage(result.data);
     updateLoading(false);

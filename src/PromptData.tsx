@@ -23,7 +23,6 @@ import axios from "axios";
 import { useEffect, useRef, useState, ChangeEvent } from "react";
 import serverUrl from "../server";
 
-// Define interfaces for your data structures
 interface PromptVersion {
   _id: string;
   version: string;

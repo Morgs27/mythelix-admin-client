@@ -4,6 +4,7 @@ import { useState, ReactNode } from "react";
 import serverUrl from "../server";
 
 interface PromptDataResponse {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   result: any;
 }
 
