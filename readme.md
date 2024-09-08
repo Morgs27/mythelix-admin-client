@@ -2,15 +2,13 @@
 
 This project is an Admin Dashboard built with React, TypeScript, and Vite. It includes features for image management, prompt data handling, and image generation for the mythelix app.
 
+This dashboard can be used to interact with [Mythelix Admin Server](https://github.com/Morgs27/mythelix-admin-server).
+
+To create images [Mythelix Image Generator](https://github.com/Morgs27/mythelix-image-generator) will also be required. 
+
 ![image-2](image-2.png)
 
 ![image-1](image-1.png)
-
-## Prerequisites
-
-- Node.js (v18 or later)
-- npm (v7 or later)
-- Docker (optional, for containerized deployment)
 
 ## Getting Started
 
